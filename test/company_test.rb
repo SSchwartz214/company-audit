@@ -15,4 +15,10 @@ class CompanyTest < Minitest::Test
     assert_equal [], company.projects
     assert_equal [], company.timesheets
   end
+
+  def test_load_employees
+    company = Company.new
+
+    assert_equal 2, company.employees.length
+  end
 end
