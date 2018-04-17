@@ -11,7 +11,7 @@ class EmployeeTest < Minitest::Test
   def test_attributes
     employee = Employee.new('5', 'Sally Jackson', 'Engineer', '2015-01-01', '2018-01-01')
 
-    assert_equal '5', employee.employee_id
+    assert_equal 5, employee.employee_id
     assert_equal 'Sally Jackson', employee.name
     assert_equal '2015-01-01', employee.start_date
     assert_equal '2018-01-01', employee.end_date
